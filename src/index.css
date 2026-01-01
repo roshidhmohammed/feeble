@@ -1,0 +1,22 @@
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
+@import "tailwindcss";
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   overflow: auto;
+  margin: 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), linear-gradient(0deg, #007AFF, #007AFF);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'General Sans', sans-serif;
+}
+
+.flying-bird-1,
+.flying-bird-2 {
+   transform: translate3d(0,0,0);
+  will-change: transform;
+}
+
+
