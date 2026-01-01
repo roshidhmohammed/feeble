@@ -27,8 +27,10 @@ const Footer = () => {
     gsap.set("body", { overflowX: "hidden" });
     gsap.set(".flying-bird-1", { clearProps: "all", overflowX: "hidden" });
     gsap.set(".flying-bird-2", { clearProps: "all", overflowX: "hidden" });
+
     const tl = gsap.timeline({ delay: 3 });
 
+    // BIRD 1 → LEFT ➜ RIGHT
     tl.fromTo(
       ".flying-bird-1",
       { x: "-120vw", y: 100, autoAlpha: 1 },
@@ -43,9 +45,10 @@ const Footer = () => {
       0
     );
 
+    // BIRD 2 → RIGHT ➜ LEFT
     tl.fromTo(
       ".flying-bird-2",
-      { x: "120vw", y: 100, autoAlpha: 1 },
+      { x: "120vw", y: 300, autoAlpha: 1 },
       {
         x: "-120vw",
         y: -500,
