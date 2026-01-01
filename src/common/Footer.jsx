@@ -1,4 +1,3 @@
-
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -59,64 +58,6 @@ const Footer = () => {
     );
   };
 
-  // const birdFlight = () => {
-  //   // gsap.set(".flying-bird-1", { overflowX: "hidden" });
-  //     gsap.set(".flying-bird-1", { clearProps: "all", overflowX: "hidden" });
-  //    gsap.set(".flying-bird-2", { clearProps: "all", overflowX: "hidden" });
-  //   // gsap.set("footer", { overflowY: "hidden" });
-
-  //   const tl = gsap.timeline({  });
-
-  //   // BIRD 1 → LEFT ➜ RIGHT
-  //   tl.fromTo(
-  //     ".flying-bird-1",
-  //     { x: "-120vw", y: 100, autoAlpha: 1 },
-  //     {
-  //       x: "10vw",
-  //       y: -200,
-  //       duration: 4,
-  //       ease: "none"   // 🐢 slow
-  //     },
-  //     0
-  //   )
-  //   .to(
-  //     ".flying-bird-1",
-  //     {
-  //       x: "120vw",
-  //       y: -500,
-  //       duration: 2,
-  //        ease: "none"    // ⚡ speeds up
-  //     },
-  //     ">0" // start right after
-  //   );
-
-  //   // BIRD 2 → RIGHT ➜ LEFT
-  //   tl.fromTo(
-  //     ".flying-bird-2",
-  //     { x: "120vw", y: 300, autoAlpha: 1 },
-  //     {
-  //       x: "-10vw",
-  //       y: -100,
-  //     duration: 4,
-  //       ease: "none"   // 🐢 slow
-  //     },
-  //     0
-  //   )
-  //   .to(
-  //     ".flying-bird-2",
-  //     {
-  //       x: "-120vw",
-  //       y: -500,
-  //       duration: 2,
-  //        ease: "none"    // ⚡ speeds up
-  //     },
-  //     ">0"
-  //   );
-
-  //   gsap.set(".flying-bird-2", { x:0, y:0,autoAlpha: 0 });
-  //   gsap.set(".flying-bird-1", { x:0, y:0, autoAlpha: 0 });
-  // };
-
   useGSAP(() => {
     footerTransitionY();
     footerBirdTransitionY();
@@ -153,7 +94,11 @@ const Footer = () => {
         <p className="text-sm md:text-base font-medium text-gray-600 mb-2">
           Scroll to learn more
         </p>
-        <img src={footerImages.scrolllDown} alt="" className="w-6 h-6 md:w-auto md:h-auto" />
+        <img
+          src={footerImages.scrolllDown}
+          alt=""
+          className="w-6 h-6 md:w-auto md:h-auto"
+        />
       </div>
 
       <div className="absolute flying-bird flying-bird-1 top-50 left-0">
