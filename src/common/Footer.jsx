@@ -33,7 +33,7 @@ const Footer = () => {
     // BIRD 1 → LEFT ➜ RIGHT
     tl.fromTo(
       ".flying-bird-1",
-      { x: "-120vw", y: 100, autoAlpha: 1 },
+      { x: "-120vw", y: 0, autoAlpha: 1 },
       {
         x: "120vw",
         y: -500,
@@ -48,7 +48,7 @@ const Footer = () => {
     // BIRD 2 → RIGHT ➜ LEFT
     tl.fromTo(
       ".flying-bird-2",
-      { x: "120vw", y: 300, autoAlpha: 1 },
+      { x: "120vw", y: 150, autoAlpha: 1 },
       {
         x: "-120vw",
         y: -500,
